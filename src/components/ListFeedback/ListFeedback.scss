@@ -12,32 +12,27 @@
     border: 1px solid #c4cbcf;
     box-sizing: border-box;
     box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
-    &::after {
-        content: "";
+    &:after, &:before {
+        content: '';
+        border: solid transparent;
         position: absolute;
+        left: 30px;
+        margin-left: -12px;
+        top: -24px;
         width: 0;
-        height: 0;
-        top: -14px;
-        border: 15px solid transparent;
-        border-bottom: 0px solid transparent;
-        border-right: 0px solid transparent;
-        border-left: 23px solid #f2fbff;
-        bottom: 100%;
-        left: 22px;
     }
-    &::before {
-         content: "";
-        position: absolute;
-        width: 0;
-        height: 0;
-        top: -15px;
-        border: 15px solid transparent;
-        border-bottom: 0px solid transparent;
-        border-right: 0px solid transparent;
-        border-left: 24px solid #c4cbcf;
-        bottom: 100%;
-        left: 21px;
-    }
+    &:before {
+        border-top-color: #c4cbcf;
+        border-width: 12px;
+        transform: rotate(180deg);
+     }
+     &:after {
+        border-top-color: #f2fbff;
+        border-width: 13px;
+        margin-left: -13px;
+        transform: rotate(180deg);
+     }
+    
 }
 
 .list_name {
