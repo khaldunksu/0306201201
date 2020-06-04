@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html,body,p,h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+.bgText1 {
+    background: #B1E19B;
+    border-radius: 0px 3px 3px 0px;
+    padding: 6px 9px;   
+}
+.bgText2 {
+    background: linear-gradient(to right, #ACE2F8 25%, white 25%);
+    border-radius: 0px 3px 3px 0px;
+    padding: 6px 9px; 
+    
+}
+
+.bgText3 {
+    background: linear-gradient(to right, #ACE2F8 15%, white 15%);
+    border-radius: 0px 3px 3px 0px;
+    padding: 6px 9px; 
+}*/
+

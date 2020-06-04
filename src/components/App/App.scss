@@ -1,0 +1,75 @@
+.App {
+  width: 489px;
+  margin: 0 auto;
+  color: #333333;
+  font-family: Arial;
+  font-style: normal;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  margin-left: 15px;
+  &_photo {
+    margin-right: 11px;
+    z-index: 2;
+    margin-top: 14px;
+    &_img {
+      width: 124px;
+      height: 124px;
+      border-radius: 50%;
+    }
+  }
+  &_inform_name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 0;
+    margin-top: 24px;
+  }
+  &_inform_vacancy {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    align-items: center;
+    color: #808080;
+    margin: 0;
+  }
+  &_inform_detail {
+    background: #fffbc8;
+    border: 1px solid #dadada;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 364px;
+    height: 54px;
+    padding-left: 45px;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: -45px;
+    z-index: 1;
+    &_text {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333333;
+    }
+  }
+}
+
+@media screen and(max-width: 720px) {
+  .App {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .header {
+    &_inform_detail {
+      width: 85%;
+      height: 80px;
+    }
+    &_photo {
+      margin-top: 39px;
+    }
+  }
+}

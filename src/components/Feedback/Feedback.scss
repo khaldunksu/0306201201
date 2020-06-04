@@ -1,0 +1,54 @@
+.feedback {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+
+    &_text {
+        display: flex;
+        margin-right: 115px;
+
+        &_feedback {
+            padding-right: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+
+    &_comments {
+        padding-left: 17px;
+        height: 16px;
+    }
+
+    &_link {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration-line: underline;
+        color: #005da1;
+    }
+}
+
+@media screen and(max-width: 720px) {
+    .feedback {
+        margin: 20px 22px;
+        justify-content: space-between;
+        &_text {
+            margin: 0;
+            &_feedback {
+                padding-right: 8px;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+        &_link {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            text-decoration-line: underline;
+            color: #005da1;
+        }
+    
+    }
+  }
